@@ -1,0 +1,51 @@
+start
+
+t1 = m * n																###
+t2 = t1 * 4																###		B1
+param oldA, param a, param t2								###
+call memcpy, 3															###
+change = true
+t3 = ! change
+
+L1 : if t3 goto L2														###		B2
+
+	change = false														###		B3
+	i = 0
+	
+L3 : t4 = i < m															###		B4
+	t5 = ! t4
+	if t5 goto L4
+	
+	j = 1																		###		B5
+	
+L5 : t6 = n - 1															###		B6
+	t7 = j < t6
+	t8 = ! t7
+	if t8 goto L6
+
+	t9 = a[i]																###		B7
+	t10 = j - 1
+	t11 = j + 1
+	t12 = t9[t10] + t9[t11]
+	t12 = t12 / 2
+	t9[j] = t12
+	t13 = oldA[i]
+	t14 = t13[j] - t9[j]
+	param t14
+	t15 = call fabs, 1
+	t16 = t15 < delta
+	if t16 goto L7
+	
+	change = true														###		B8
+
+L7 : j = j + 1															###		B9
+	goto L5
+	
+L6 : i = i + 1															###		B10
+	goto L3
+
+L4 : param oldA, param a, param t2							###		B11
+	call memcpy, 3
+	goto L1
+
+L2 : end

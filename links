@@ -1,0 +1,11 @@
+link(fortran, algo160).
+link(algo160, cp1).
+link(cp1, bcp1).
+link(bcp1, c).
+link(c, cplusplus).
+link(algo160, simula67).
+link(simula67, cplusplus).
+link(simula67, smalltalk80).
+
+path(L, L).
+path(L, M) :- link(L, X), path(X, M).

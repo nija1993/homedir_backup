@@ -1,0 +1,6 @@
+#SimpleCLI
+#Sat Nov 09 00:45:51 IST 2013
+Command2=java weka.core.SystemInfo
+Command1=java weka.core.SystemInfo | grep libsvm
+Command0=java weka.core.SystemInfo
+HistorySize=50

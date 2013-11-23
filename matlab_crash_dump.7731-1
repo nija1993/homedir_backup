@@ -1,0 +1,82 @@
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Tue Oct  8 13:47:35 2013
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding  : Disabled
+  Current Visual  : 0x23 (class 4, depth 24)
+  Default Encoding: UTF-8
+  GNU C Library   : 2.15 stable
+  MATLAB Root     : /media/C8CED422CED40A98/matlab_ubuntu
+  MATLAB Version  : 7.14.0.739 (R2012a)
+  Operating System: Linux 3.2.0-54-generic-pae #82-Ubuntu SMP Tue Sep 10 20:29:22 UTC 2013 i686
+  Processor ID    : x86 Family 6 Model 37 Stepping 5, GenuineIntel
+  Virtual Machine : Java 1.6.0_17-b04 with Sun Microsystems Inc. Java HotSpot(TM) Client VM mixed mode
+  Window System   : The X.Org Foundation (11103000), display :0
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  EAX = 00000020  EBX = b2dcc398
+  ECX = 00000000  EDX = 00000000
+  ESP = 96a5c6c8  EBP = 96a5c6c8
+  ESI = aed77ad8  EDI = b7714290
+
+  EIP = b2ccbf34  EFL = 00210202
+
+   CS = 00000073   DS = 0000007b   SS = 0000007b
+   ES = 0000007b   FS = 00000000   GS = 00000033
+
+Stack Trace (from fault):
+[  0] 0xb75aa411 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwfl.so+00300049 _ZN2fl4diag15stacktrace_base7captureERKNS0_14thread_contextEj+000169
+[  1] 0xb75acb36 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwfl.so+00310070
+[  2] 0xb75acfcf /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwfl.so+00311247 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+000190
+[  3] 0xb711ca71 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwmcr.so+01096305 _ZN2fl4diag13terminate_logEPKcPK8ucontext+000076
+[  4] 0xb71195f6 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwmcr.so+01082870
+[  5] 0xb711b226 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwmcr.so+01090086
+[  6] 0xb711b9da /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwmcr.so+01092058
+[  7] 0xb772440c __kernel_rt_sigreturn+000000
+[  8] 0xb2ccbf34 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwuix.so+00438068 _ZNK21uixDisplayInformation11getXDisplayEv+000008
+[  9] 0xb2ccc400 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwuix.so+00439296 _Z14UIX_AnyXActivev+000043
+[ 10] 0xb2ccb0d1 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwuix.so+00434385 _Z15UIX_x_connectedv+000023
+[ 11] 0xb2cc9648 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwuix.so+00427592 _Z16ws_PostUserEventii+000031
+[ 12] 0xb72f3109 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libmwservices.so+00815369 svWS_PostUserEvent+000037
+[ 13] 0x964fe1a6 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+00410022
+[ 14] 0x964fe96a /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+00412010
+[ 15] 0x964feb53 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+00412499
+[ 16] 0xaa709f4d /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338100045
+[ 17] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 18] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 19] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 20] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 21] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 22] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 23] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 24] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 25] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 26] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 27] 0xaa702fcd /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338071501
+[ 28] 0xaa7034a9 /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338072745
+[ 29] 0xaa7002cc /media/C8CED422CED40A98/matlab_ubuntu/bin/glnx86/libnativemvm.so+338059980
+[ 30] 0xadc6d740 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+02176832
+[ 31] 0xadd81158 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+03305816
+[ 32] 0xadc6cf47 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+02174791
+[ 33] 0xadc6d087 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+02175111
+[ 34] 0xade250c5 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+03977413
+[ 35] 0xade246f7 /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+03974903
+[ 36] 0xadd825fe /media/C8CED422CED40A98/matlab_ubuntu/sys/java/jre/glnx86/jre/lib/i386/client/libjvm.so+03311102
+[ 37] 0xb678fd4c                /lib/i386-linux-gnu/libpthread.so.0+00027980
+[ 38] 0xb66cddde                      /lib/i386-linux-gnu/libc.so.6+00978398 clone+000094
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.

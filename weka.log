@@ -1,0 +1,22 @@
+2013-11-09 17:55:38 weka.gui.GUIChooser main
+INFO: Logging started
+---Registering Weka Editors---
+Trying to add database driver (JDBC): RmiJdbc.RJDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): jdbc.idbDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): org.gjt.mm.mysql.Driver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Error, not in CLASSPATH?
+2013-11-09 17:55:43 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2013-11-09 17:55:43 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2013 The University of Waikato, Hamilton, New Zealand
+2013-11-09 17:55:43 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2013-11-09 17:55:43 weka.gui.explorer.Explorer <init>
+INFO: Started on Saturday, 9 November 2013
+2013-11-09 18:07:22 weka.gui.explorer.ClassifierPanel$16 run
+INFO: Started weka.classifiers.meta.AdaBoostM1
+2013-11-09 18:07:22 weka.gui.explorer.ClassifierPanel$16 run
+INFO: Command:weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2013-11-09 20:43:31 weka.gui.explorer.ClassifierPanel$16 run
+INFO: Finished weka.classifiers.meta.AdaBoostM1

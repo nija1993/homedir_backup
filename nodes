@@ -1,0 +1,4 @@
+node(K, S, T).
+member(K, node(K,_,_)).
+member(K, node(N,S,_)) :- K<N, member(K,S).
+member(K, node(N,_,T)) :- K>N, member(K,T).
